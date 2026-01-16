@@ -19,7 +19,7 @@ function App() {
       <div className='z-10 w-screen h-screen'>
         <Profile onHover={() => setVisible("Yes Its Me")} onLeave={() => setVisible("My Area")} />
         <Project onHover={() => setVisible("My Project")} onLeave={() => setVisible("My Area")} />
-        <Skillset onHover={() => setVisible("My Skill")} onLeave={() => setVisible("My Area")} />
+        <Skillset onHover={(skillname) => setVisible(skillname)} onLeave={() => setVisible("My Area")} />
         <About onHover={() => setVisible("About Me")} onLeave={() => setVisible("My Area")} />
         <Contact onHover={() => setVisible("Contact Me")} onLeave={() => setVisible("My Area")} />
       </div>
